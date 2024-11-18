@@ -1,0 +1,213 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Flujodetrabajo" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Flujodetrabajo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Flujodetrabajo" sap:VirtualizedContainerService.HintSize="1853,1592" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="tabdat" />
+      <Variable x:TypeArguments="x:String" Name="tabdattxt" />
+      <Variable x:TypeArguments="x:String" Name="tempstring" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Sin título Bloc de notas" sap:VirtualizedContainerService.HintSize="450,1569" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="aed62b41-d80e-4630-98b2-ae385e36192a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,1255" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="382,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="aed62b41-d80e-4630-98b2-ae385e36192a" Shortcuts="[d(hk)][d(ctrl)]r[u(ctrl)][u(hk)]" Version="V4" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Escribir en 'R&amp;eemplazar por'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="aed62b41-d80e-4630-98b2-ae385e36192a" Text="  " Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="hEmFWUJMmUKKVnSkIV7mZA" DesignTimeRectangle="89, 42, 171, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1152' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1152' /&gt;" Guid="fa3e5cdf-932d-4886-9dad-15db13df7bac" InformativeScreenshot="b10041f2d4ee38d553b3c01de72da907.png" IsResponsive="True" Reference="IRjkP2GBPUyeKH01XhkMTg/nvEx3pgMcUSzaNCnQR2r7g" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Reemplazar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="14, 46, 72, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='65535' title='&amp;amp;Buscar:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='65535' title='&amp;amp;Buscar:' check:text='&amp;amp;Buscar:' /&gt;" Guid="1fe6a8c6-b572-4d37-8022-53534e46c38c" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Escribir en 'R&amp;eemplazar por'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="aed62b41-d80e-4630-98b2-ae385e36192a" Text=" " Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="jh2dVBLh702rmjm4JMHs4g" DesignTimeRectangle="89, 70, 171, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlid='1153' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1153' /&gt;" Guid="4d51bccd-04ee-44e2-92a1-0079787fc7e2" InformativeScreenshot="d0c616da7380224786ed6330e35f0a17.png" IsResponsive="True" Reference="IRjkP2GBPUyeKH01XhkMTg/kK6DkRf13Uiiq48d_QzucQ" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Reemplazar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="14, 68, 72, 29" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='65535' title='R&amp;amp;eemplazar por:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='65535' title='R&amp;amp;eemplazar por:' check:text='R&amp;amp;eemplazar por:' /&gt;" Guid="b8815d23-7da9-43c6-9c56-32dba6f9840d" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Reempla&amp;zar todo'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aed62b41-d80e-4630-98b2-ae385e36192a" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="293, 93, 101, 23" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1025' title='Reempla&amp;amp;zar todo' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1025' title='Reempla&amp;amp;zar todo' check:text='Reempla&amp;amp;zar todo' /&gt;" Guid="a0fb90a8-f774-4115-9876-2395fce1e4f8" InformativeScreenshot="201ccc593ed77e3c15887e87be70a8f5.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Reemplazar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="293, 65, 101, 23" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1024' title='&amp;amp;Reemplazar' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1024' title='&amp;amp;Reemplazar' check:text='&amp;amp;Reemplazar' /&gt;" Guid="4f68e53e-1f72-45e3-8b01-aeb7733b9f49" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado 'Reemplazar'" sap:VirtualizedContainerService.HintSize="382,259" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="aed62b41-d80e-4630-98b2-ae385e36192a" Shortcuts="[d(hk)][k(Esc)][u(hk)]" Version="V4">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable ContentHash="mFMtbCdTu0qJuo7z5wWbiA" DesignTimeRectangle="8, 31, 398, 154" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Reemplazar' role='dialog' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Reemplazar' role='dialog' automationid='' check:text='Reemplazar' /&gt;" Guid="32e0a4e2-04bc-411c-8560-98bba9243d22" InformativeScreenshot="d20509e060eade7b97cc445e27829b6b.png" Reference="IRjkP2GBPUyeKH01XhkMTg/Y0MI6T1Q40uKfQCsoRybJQ" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='#32770' title='Reemplazar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="0, 0, 414, 193" Guid="1094fa6a-44d8-41f4-b455-7bb9e57e4b96" SearchSteps="Selector, FuzzySelector">
+                        <uix:Target.FuzzySelectorArgument>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </uix:Target.FuzzySelectorArgument>
+                      </uix:Target>
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NKeyboardShortcuts.Target>
+            </uix:NKeyboardShortcuts>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 2576, 1416" ContentHash="QlzyMe7u9E-go8taJWbR1g" FilePath="C:\Windows\System32\notepad.exe" IconBase64="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" InformativeScreenshot="55e32c9e3d72898d607b240a86ede123.png" Reference="IRjkP2GBPUyeKH01XhkMTg/OlbV2DIgaEyH73CTOnmlew" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Sin título: Bloc de notas' /&gt;" Title="NVIDIA GeForce Overlay" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
